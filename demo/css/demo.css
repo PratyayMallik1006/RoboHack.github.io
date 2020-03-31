@@ -144,7 +144,17 @@ nav{
         position: relative;
         margin-top: 200%;
     }
-    
+    nav .after{
+        content: "";
+    }
+    #home .robovit-text {
+        position: absolute;
+        margin: 10% auto;                
+    }
+    #home button{
+        position: absolute;
+        margin: 40% auto;
+    }
 }
     
 }
