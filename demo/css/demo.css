@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #444;
+    background-color: #333;
 	
 	font-family: 'Raleway', 'Arial', sans-serif;
     display: block;
@@ -25,27 +25,55 @@ body {
     text-align: center;
     padding: 10%;
     
+    
 }
 
 nav{
-    font-size: 30px;
+    font-size: 1.5vw;
     background-color: #f00;
 }
-
+#home{
+    padding: 10%;
+}
 #home button{
-    margin-top: 50px;
-    font-size: 3rem;
+    margin-top: 10%;
+    font-size: 3vw;
+}
+
+#timmer{
+    background-color: #222;
+    background-image: url('../img/pattern.png');
+	background-position: center;
+	background-repeat: repeat;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    display: block;
+    
+    
+}
+
+.robovit-text{
+    margin: 5% auto;
+    display: inline;
 }
 .countdown-container {
+    position: relative;
+    justify-content: center;
+    border-top-color: #fff;
+    border-top-width: thick;
     background-color: rgba(44,62,80 , 0.6 );
 	background-image: url('../img/pattern.png');
 	background-position: center;
 	background-repeat: repeat;
     width: 100%;
     height: auto;
-    padding: 10%;
-    position: relative;
-    margin-top: 100vh;
+    padding: 5% 10%;
+    margin: 20% auto;
+    
+    
+    /*margin-top: 100vh;*/
     
 		-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -70,7 +98,7 @@ nav{
 
 .text {
 	color: #fff;	
-	font-size: 20px;
+	font-size: 3vw;
 	font-weight: bold;	
 	margin-top: -50px;
 	position: absolute;
@@ -81,19 +109,19 @@ nav{
 }
 
 .text .val {
-	font-size: 2rem;
+	font-size: 2.5vw;
 }
 
 .text .type-time {
-	font-size: 1.6rem;
+	font-size: 2.3vw;
 }
 .robo{
-    font-size: 7rem;
+    font-size: 6vw;
     color: #fff;
     font-family: serif;
 }
 .vit{
-    font-size: 8rem;;
+    font-size: 6.5vw;
     color: #f00;
     font-family: serif;
 }
@@ -101,10 +129,22 @@ nav{
 	.clock-item {
 		margin-bottom: 30px;		
 	}
+    .countdown-container{
+        position: absolute;
+    margin-top: 100px;
+    }
+    
 }
 
 @media (max-width: 767px) {
 	.clock-item {
 		margin: 0px 30px 30px 30px;
 	}
+    .countdown-container{
+        position: relative;
+        margin-top: 200%;
+    }
+    
+}
+    
 }
